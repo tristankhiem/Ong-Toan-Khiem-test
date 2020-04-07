@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.sub-header{
+	text-align:center;
+	height:30px;
+	width:100%;
+	font-size:24px;
+	color:#C36;
+}
+
+#form{
+	border:solid 2px;
+	height:400px;
+	width:750px;
+	position:relative;
+	left:25%;
+	top:25%;
+}
+
+#header{
+	text-align:center;
+	font-size:18px;
+	background-color:red;
+	color:green;
+	height:30px;
+	width:100%;
+	vertical-align:middle;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+}
+
+/*#header p{
+	vertical-align:central;
+}*/
+
+.input{
+	float:right;
+	width:50%;
+	text-align:left;
+}
+
+.label{
+	float:left;
+	width:50%;
+	text-align:right;
+}
+
+.label div{
+	height:22px;
+}
+
+.blank{
+	clear:both;
+}
+
+#personal{
+	height:100px;
+	width:100%;
+	border-bottom:solid 2px;
+}
+
+#user{
+	height:160px;
+	width:100%;
+	border-bottom:solid 2px;
+}
+
+#hobby{
+	height:50px;
+	width:100%;
+	text-align:center;
+	border-bottom:solid 2px;
+}
+
+#button{
+	text-align:center;
+	width:100%;
+	height:50px;
+}
+
+#button p{
+	vertical-align:middle;
+}

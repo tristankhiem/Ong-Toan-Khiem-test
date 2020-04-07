@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="formdk.css" rel="stylesheet" />
+<script src="formdk.js" ></script>
+</head>
+
+<body>
+	<div id="form">
+    	<div id="header">ĐĂNG KÝ NGƯỜI DÙNG</div>
+        <div id="personal">
+        	<div class="sub-header">Thông tin chung</div>
+        	<div class="label">
+            	<div>Tên đăng nhập</div>
+                <div>Mật khẩu</div>
+                <div>Nhập lại mật khẩu</div>
+            </div>
+            <div class="input">
+            	<div>
+                	<input type="text" name="username" size="30" placeholder="Hãy nhập tên đăng nhập"id="usr" onblur="checkusr()" onkeypress="reloadusr()"/>
+                    <label id="usr-dec"></label>
+                </div>
+                <div>
+                	<input type="password" name="password" size"20" placeholder="Nhập mật khẩu" id="pass" onblur="checkpass()" onkeypress="reloadpass()" />
+                    <label id="pass-dec"></label>
+                </div>
+                <div>
+                	<input type="password" name"password" size="20" placeholder="Hãy nhập lại mật khẩu" id="repass" onblur="checkpass()" onkeypress="reloadrepass()"/>
+                    <label id="repass-dec"></label>
+                </div>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div id="user">
+        	<div class="sub-header">Thông tin cá nhân</div>
+        	<div class="label">
+            	<div>Họ tên<br /></div>
+                <div>Ngày sinh</div>
+                <div>Nơi sinh</div>
+                <div>Giới tính</div>
+                <div>Số điện thoại</div>
+                <div>Email</div>
+            </div>
+            <div class="input">
+            	<div>
+                	<input type="text" name="name" size="30" placeholder="Hãy gõ họ và tên" id="name" onblur="checkname()" onkeypress="reloadname()"/>
+                    <label id="name-dec"></label>
+                </div>
+                <div>
+                	<input type="date" name="birthdate" id="bd"oonkeypress="reloadbd()"/>
+                    <label id="bd-dec"></label>
+                </div>
+                <div>
+                	<input type="text" name="pob" size="30" placeholder="Hãy gõ nơi sinh" id="pod" onkeypress="reloadpod"/>
+                    <label id="pod-dec"></label>
+                </div>
+                <div>
+                	<input type="radio" name="sex" checked="checked"/>
+                    <label>Nam</label>
+                    <input type="radio" name="sex"/>
+                    <label>Nữ</label>
+                </div>
+                <div>
+                	<input type="text" name="tel" size="20" placeholder="Nhập số điện thoại" id="tel" onblur="checktel()" onkeypress="reloadtel()"/>
+                    <label id="tel-dec"></label>
+                </div>
+                <div>
+                	<input type="text" name="mail" size="20" placeholder="Nhập Email" id="mail" onblur="checkmail()" onkeypress="reloadmail()"/>
+                    <label id="mail-dec"></label>
+                </div>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div id="hobby">
+        	<div class="sub-header">Sở thích</div>
+            <div>
+            	<input type="checkbox" name="reading" checked="checked"/>
+                <label>Đọc sách</label>
+                <input type="checkbox" name="sport"/>
+                <label>Thể thao</label>
+                <input type="checkbox" name="cine"/>
+                <label>Xem phim</label>
+                <input type="checkbox" name="other"/>
+                <label>Khác</label>
+            </div>
+        </div>
+        <div id="button">
+        	<p>
+        	<input type="submit" name="submit" value="Register" onclick="checksumbit()" />
+            <input type="reset" onclick="reset_label()" />
+            </p>
+        </div>
+    </div>
+</body>
+</html>
